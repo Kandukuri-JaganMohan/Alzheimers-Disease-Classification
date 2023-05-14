@@ -1,5 +1,6 @@
 from PIL import Image
 import streamlit as st
+pip install tensorflow
 import tensorflow as tf
 import numpy as np
 page_bg_img = '''
