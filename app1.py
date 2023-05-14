@@ -1,6 +1,8 @@
 from PIL import Image
 import streamlit as st
-!pip install tensorflow
+import subprocess
+import sys
+subprocess.check_call([sys.executable, "-m", "pip", "install", "tensorflow"])
 import tensorflow as tf
 import numpy as np
 page_bg_img = '''
