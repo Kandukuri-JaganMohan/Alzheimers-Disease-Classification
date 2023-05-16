@@ -50,3 +50,6 @@ if(img is not None):
 		sugs = sug[label].split(',')
 		for i in sugs:
 			st.write(i)
+col1,col2,col3 = st.columns([8,1,8])
+with col2:
+	st.markdown("[About Us](AboutUs)")

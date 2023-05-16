@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(layout="wide")
 col1,col2,col3 = st.columns([3,1,3])
 with col2:
 	st.header("About Us")
@@ -29,3 +30,7 @@ with col2:
 col1,col2,col3 = st.columns([8,2,8])
 with col2:
 	st.markdown("###### Abhinaya Rapolu")
+col1,col2,col3 = st.columns([8,1,8])
+with col2:
+	st.markdown("[Login](Login) ")
+	st.markdown("[Sign Up](Signup)")
