@@ -25,6 +25,7 @@ with col2:
 		if(ubool):
 			ind = list(df['Name']).index(uname)
 			if(pwd==df['pwd'][ind]):
+				st.session_state=True
 				st.warning('Login Successful', icon="✅")
 				time.sleep(2)
 				ste.switch_page("Home")

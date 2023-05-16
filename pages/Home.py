@@ -1,8 +1,13 @@
 from PIL import Image
 import streamlit as st
+import streamlit_extras.switch_page_button as ste
 import tensorflow as tf
 import numpy as np
 st.set_page_config(layout="wide")
+if st.session_state:
+	pass
+else:
+	ste.switch_page("Login")
 col1,col2,col3 = st.columns([1,4,1])
 with col2:
 	st.title("Early onset detection of Alzheimer's Disease")
