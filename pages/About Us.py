@@ -10,7 +10,8 @@ st.divider()
 st.subheader("Introducing the team behind the project:")
 col1,col2,col3 = st.columns([2,1,2])
 with col2:
-	st.image("Jagan.jpg",caption="Jagan Mohan K")
+	st.image("Jagan.jpg")
+	st.caption(:white["Jagan Mohan K"])
 # col1,col2,col3 = st.columns([5,1,5])
 # with col2:
 # 	st.markdown("###### Jagan Mohan K")
