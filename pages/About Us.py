@@ -10,19 +10,19 @@ st.divider()
 st.subheader("Introducing the team behind the project:")
 col1,col2,col3 = st.columns([2,1,2])
 with col2:
-	st.image("Jagan.jpg")
-col1,col2,col3 = st.columns([5,1,5])
-with col2:
-	st.markdown("###### Jagan Mohan K")
+	st.image("Jagan.jpg",caption="Jagan Mohan K")
+# col1,col2,col3 = st.columns([5,1,5])
+# with col2:
+# 	st.markdown("###### Jagan Mohan K")
 col1,col2,col3 = st.columns([2,1,2])
 with col2:
-	st.image("Nithin.jpg")
-col1,col2,col3 = st.columns([3,1,3])
-with col2:
-	st.markdown("###### Nithin kumar reddy V")
+	st.image("Nithin.jpg",caption="Nithin kumar reddy V")
+# col1,col2,col3 = st.columns([3,1,3])
+# with col2:
+# 	st.markdown("###### Nithin kumar reddy V")
 col1,col2,col3 = st.columns([2,1,2])
 with col2:
-	st.image("Abhinaya.jpg")
-col1,col2,col3 = st.columns([4,1,4])
-with col2:
-	st.markdown("###### Abhinaya Rapolu")
+	st.image("Abhinaya.jpg",caption="Abhinaya Rapolu")
+# col1,col2,col3 = st.columns([4,1,4])
+# with col2:
+# 	st.markdown("###### Abhinaya Rapolu")
