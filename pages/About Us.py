@@ -26,6 +26,6 @@ col1,col2,col3 = st.columns([2,1,2])
 with col2:
 	st.image("Abhinaya.jpg")
 # 	st.caption(":violet[Abhinaya Rapolu]")
-col1,col2,col3 = st.columns([4,1,4])
+col1,col2,col3 = st.columns([7,2,7])
 with col2:
 	st.markdown("###### Abhinaya Rapolu")
