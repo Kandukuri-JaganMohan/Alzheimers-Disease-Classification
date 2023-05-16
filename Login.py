@@ -7,7 +7,10 @@ st.set_page_config(layout="wide")
 df = pd.read_csv("Database.csv")
 col1,col2 = st.columns([1,1])
 with col1:
-	st.image("Login logo.jpg")
+	#video_file = open('video.mp4', 'rb')
+	#video_bytes = video_file.read()
+	#st.video(video_bytes,start_time=1)
+	st.image("Digital-Brain-Scan-AI-Analysis.gif")
 with col2:
 	col3,col4 = st.columns([1,1])
 	with col4:
