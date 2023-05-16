@@ -7,7 +7,8 @@ st.set_page_config(layout="wide")
 df = pd.read_csv("Database.csv")
 col1,col2 = st.columns([1,1])
 with col1:
-	st.image("Register logo.jpg")
+	st.image("3D-Brain-Illustration.gif")
+	#st.image("Register logo.jpg")
 with col2:
 	col3,col4 = st.columns([1,1])
 	with col4:
