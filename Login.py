@@ -4,6 +4,7 @@ import streamlit_extras.switch_page_button as ste
 import pandas as pd
 import numpy as np
 st.set_page_config(layout="wide")
+st.session_state=False
 df = pd.read_csv("Database.csv")
 col1,col2 = st.columns([1,1])
 with col1:
@@ -27,7 +28,9 @@ with col2:
 			if(pwd==df['pwd'][ind]):
 				st.session_state=True
 				st.warning('Login Successful', icon="✅")
-				time.sleep(2)
+				time.sleep(1)
+				st.warning('Redirecting to Home page', icon="⚙️")
+				time.sleep(1)
 				ste.switch_page("Home")
 			else:
 				st.warning('Wrong username or password', icon="❌")
