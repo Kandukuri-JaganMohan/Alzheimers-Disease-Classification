@@ -4,7 +4,7 @@ import time
 import pandas as pd
 import numpy as np
 st.set_page_config(layout="wide")
-df = pd.read_csv("Database.csv")
+df = pd.read_csv("pages/Database.csv")
 col1,col2 = st.columns([1,1])
 with col1:
 	st.image("3D-Brain-Illustration.gif")
@@ -25,7 +25,7 @@ with col2:
 		else:
 			new_usr = {'Name':uname,'pwd':pwd}
 			df = df.append(new_usr,ignore_index=True)
-			df.to_csv('Database.csv',index=False)
+			df.to_csv('pages/Database.csv',index=False)
 			st.warning('Account created successfully', icon="✅")
 			time.sleep(1)
 			st.warning('Redirecting to Login page', icon="⚙️")

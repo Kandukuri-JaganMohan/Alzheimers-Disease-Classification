@@ -5,13 +5,13 @@ import pandas as pd
 import numpy as np
 st.set_page_config(layout="wide")
 st.session_state=False
-df = pd.read_csv("Database.csv")
+df = pd.read_csv("pages/Database.csv")
 col1,col2 = st.columns([1,1])
 with col1:
 	#video_file = open('video.mp4', 'rb')
 	#video_bytes = video_file.read()
 	#st.video(video_bytes,start_time=1)
-	st.image("Digital-Brain-Scan-AI-Analysis.gif")
+	st.image("brain.gif")
 with col2:
 	col3,col4 = st.columns([1,1])
 	with col4:
@@ -40,4 +40,3 @@ with col2:
 	col3,col4,col5 = st.columns([8,8,15])
 	with col5:
 		st.markdown("[Sign Up](Signup)")
-df = pd.read_csv("Database.csv")
