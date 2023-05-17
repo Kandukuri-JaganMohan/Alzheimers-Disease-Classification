@@ -23,8 +23,8 @@ with col2:
 		if(ubool):
 			st.warning('Username already in use', icon="❌")
 		else:
-			new_usr = {'Name':uname,'pwd':pwd}
-			df = df.append(new_usr,ignore_index=True)
+			new_usr = pd.DataFrame({'Name':[uname],'pwd':[pwd]})
+			df = pd.concat([df,new_usr],axis=1)
 			df.to_csv('pages/Database.csv',index=False)
 			st.warning('Account created successfully', icon="✅")
 			time.sleep(1)
