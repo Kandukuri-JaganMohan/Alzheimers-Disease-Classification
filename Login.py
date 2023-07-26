@@ -33,7 +33,7 @@ with col2:
 				time.sleep(1)
 				ste.switch_page("Home")
 			else:
-				st.warning('Wrong username or password', icon="❌")
+				st.warning('Wrong password', icon="❌")
 		else:
 			st.warning('Not a registered user', icon="⚠️")
 			time.sleep(1)
